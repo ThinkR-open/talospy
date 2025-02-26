@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.0.0-alpha"
+description = ""
+authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+shiny = "^1.2.1"
+pre-commit = "^3.7.1"
+pytest = "^8.2.2"
+faicons = "^0.2.2"
+pathlib = "^1.0.1"
+pytest-github-report = "^0.0.1"
+htmltools = "^0.6.0"
+pytest-playwright = "^0.5.1"
+poethepoet = "^0.32.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+talos    = "echo 'Talos was chosen for its mythical significance as a powerful, mechanical protector, symbolizing the robust and automated nature of this framework, designed to structure and safeguard your Shiny apps.'"
+test     = "poetry run pytest --github-report -vvv --browser webkit --browser chromium --browser firefox"
+runshiny = "shiny run --reload app/app.py"
