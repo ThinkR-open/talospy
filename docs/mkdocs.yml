@@ -1,2 +1,5 @@
 site_name: TalosPy
-theme: readthedocs
+theme:
+  name: readthedocs
+  analytics:
+    gtag: G-9W6WC1J54X

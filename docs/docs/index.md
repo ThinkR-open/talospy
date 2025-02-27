@@ -19,3 +19,5 @@ After installing `cookiecutter`, you can use the `talospy` template by running t
 ```bash
 pipx run cookiecutter gh:ThinkR-open/talospy
 ```
+
+This command will create a new directory with the name you provide. Inside this directory, you will find the files and folders needed to start building your Shiny application.
