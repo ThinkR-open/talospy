@@ -1,6 +1,6 @@
 {
   "python.testing.pytestArgs": [
-    "{{ cookiecutter.project_slug }}"
+    "app"
   ],
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true
