@@ -3,7 +3,13 @@
 [![Cookiecutter](https://img.shields.io/badge/Templating%20app%20with-Cookiecutter-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter)
 ![Python](https://img.shields.io/badge/Language-Python-blue)
 
-1. Install [pipx](https://pipx.pypa.io/stable/installation/)
+Install [pipx](https://pipx.pypa.io/stable/installation/)
+
+1. Install cookiecutter
+
+```bash
+pipx install cookiecutter
+```
 
 2. Use a Github template
 
@@ -13,10 +19,14 @@ pipx run cookiecutter gh:ThinkR-open/talospy
 
 3. Answer the questions
 
-4. Use poetry shell
+4. Install and use poetry shell
 
 ```bash
-cd talospy
+poetry self add poetry-plugin-shell
+```
+
+```bash
+cd name_of_your_project
 poetry shell
 ```
 
