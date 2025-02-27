@@ -63,7 +63,7 @@ def welcome_talospy_ui():
                         ui.h2(icon_svg("book"), "Read the doc"),
                         ui.h5("Click here to read the TalosPy documentation."),
                     ),
-                    href="#",
+                    href="https://thinkr-open.github.io/talospy/",
                     target="_blank",
                     style="text-decoration: none; color: #000000",
                 ),
